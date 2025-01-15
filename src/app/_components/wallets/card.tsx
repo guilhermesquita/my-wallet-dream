@@ -32,7 +32,7 @@ const CardWallet = ({
                     {descriptionWallet}
                   </CardDescription>
                 )}
-                <p className="text-mld-gray300 text-[10px]">
+                <p className="text-mld-gray300 text-[12px]">
                   valor total: R$ {priceWallet}
                 </p>
               </CardHeader>

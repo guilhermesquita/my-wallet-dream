@@ -9,6 +9,14 @@ export default {
   ],
   theme: {
     extend: {
+      fontSize: {
+        headline3: "1.875rem",
+        headline4: "1.25rem",
+        body1: "1rem",
+        body2: "0.9375rem",
+        body3: "0.875rem",
+        body4: "0.75rem",
+      },
       colors: {
         mld: {
           white: "#000000",

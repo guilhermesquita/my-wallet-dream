@@ -1,3 +1,4 @@
+import SectionDreams from "../_components/dreams/section";
 import Header from "../_components/header/Header";
 import SectionWallet from "../_components/wallets/section";
 
@@ -7,6 +8,7 @@ export default function Home() {
       <Header />
 
       <SectionWallet />
+      <SectionDreams />
     </main>
   );
 }
