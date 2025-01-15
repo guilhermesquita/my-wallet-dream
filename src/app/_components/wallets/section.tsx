@@ -1,30 +1,12 @@
 import { WalletListMock } from "@/app/_mock/wallets-mock";
-import InfoIcon from "../commons/icons/infoIcon";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "../ui/tooltip";
 import AddWalletButton from "./add-wallet-button";
 import CardWallet from "./card";
+import Caption from "../commons/caption";
 
 const SectionWallet = () => {
   return (
     <div className="space-y-3">
-      <h3 className="font-bold text-[30px] flex gap-1">
-        Meus Wallets
-        <TooltipProvider>
-          <Tooltip>
-            <TooltipTrigger className="mb-4">
-              <InfoIcon />
-            </TooltipTrigger>
-            <TooltipContent>
-              <p>Add to library</p>
-            </TooltipContent>
-          </Tooltip>
-        </TooltipProvider>
-      </h3>
+      <Caption title="Meus Wallets" textTooltip="qualquer texto aqui" />
       <div className="flex flex-wrap gap-12">
         {WalletListMock.map((wallet) => {
           return (
